@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        #myInput{
+        box-sizing: border-box;
+        border: 1px solid #dddcdc;
+        border-radius: 5px;
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        padding: 8px;
+        width: 100%;
+        font-size: 18px;
+        }
+        .category{
+        box-sizing: border-box;
+        border: 1px solid #eee;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 10px;
+        background: #FF416C;
+        background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+        background: linear-gradient(to right, #FF4B2B, #FF416C);
+        color: #fff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+        font-family: 'Lemonada', sans-serif;
+        font-size: 22px;
+        text-align: center;
+        }       
+        .grid{
+        display: grid;
+        grid-auto-rows: 2fr;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+        .box{
+        background: #fff;
+        border: 1px solid #e6e6e6;
+        border-radius: 8px;
+        width: auto;
+        height: 50px;
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        padding: 2px;
+        text-align: center;
+        }
+        .box a{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        color: #000;
+        }
+        .box span{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 17px;
+        }
+        </style>
+        <title>Modina Traders</title>
+    </head>
+    <script>
+        function searchItem()
+        {
+        var input, filter, ul, li, span, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myList");
+        li = document.getElementsByTagName('li');        
+        for (i = 0; i < li.length; i++)
+        {
+        span=li[i].getElementsByTagName('span')[0];
+        if (span.innerHTML.toUpperCase().indexOf(filter)>-1)
+        {
+        li[i].style.display= "";
+        }
+        else
+        {
+        li[i].style.display= "none";
+    }}}
+        </script> 
+    <body>
+        
+        <ul class="grid">
+
+
+
+            
+            
+	<li class="box">
+                <a href="https://server.page.link/mt1">
+                <br/>স'মিল ও দরজা</a>
+            </li>
+	<li class="box">
+                <a href="https://server.page.link/mt2">
+                <br/>গরু ও মাছ</a>
+            </li>
+	<li class="box">
+	<a href="https://server.page.link/mt3">
+                <br/>বরফ ও দোকান</a>
+            </li>
+
+
+
+
+
+
+
+        </ul>
+    </body>
+</html>
